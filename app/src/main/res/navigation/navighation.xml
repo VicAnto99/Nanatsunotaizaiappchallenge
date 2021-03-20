@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navighation"
+    app:startDestination="@id/nanatsuFragment">
+
+    <fragment
+        android:id="@+id/nanatsuFragment"
+        android:name="edu.itesm.nanatsunotaizaiappchallenge.NanatsuFragment"
+        android:label="NanatsuFragment" >
+        <action
+            android:id="@+id/action_nanatsuFragment_to_arcangelesFragment"
+            app:destination="@id/arcangelesFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nanatsuFragment_to_mandamientosFragment"
+            app:destination="@id/mandamientosFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_nanatsuFragment_to_pecadosFragment"
+            app:destination="@id/pecadosFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/arcangelesFragment"
+        android:name="edu.itesm.nanatsunotaizaiappchallenge.ArcangelesFragment"
+        android:label="fragment_arcangeles"
+        tools:layout="@layout/fragment_arcangeles" >
+        <action
+            android:id="@+id/action_arcangelesFragment_to_arcangelFragment"
+            app:destination="@id/arcangelFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/arcangelFragment"
+        android:name="edu.itesm.nanatsunotaizaiappchallenge.ArcangelFragment"
+        android:label="fragment_arcangel"
+        tools:layout="@layout/fragment_arcangel" >
+        <argument
+            android:name="arcangel"
+            app:argType="edu.itesm.nanatsunotaizaiappchallenge.Arcangeles" />
+    </fragment>
+    <fragment
+        android:id="@+id/mandamientosFragment"
+        android:name="edu.itesm.nanatsunotaizaiappchallenge.MandamientosFragment"
+        android:label="fragment_mandamientos"
+        tools:layout="@layout/fragment_mandamientos" >
+        <action
+            android:id="@+id/action_mandamientosFragment_to_mandamientoFragment"
+            app:destination="@id/mandamientoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/mandamientoFragment"
+        android:name="edu.itesm.nanatsunotaizaiappchallenge.MandamientoFragment"
+        android:label="fragment_mandamiento"
+        tools:layout="@layout/fragment_mandamiento" >
+        <argument
+            android:name="mandamientos"
+            app:argType="edu.itesm.nanatsunotaizaiappchallenge.Mandamientos" />
+    </fragment>
+    <fragment
+        android:id="@+id/pecadosFragment"
+        android:name="edu.itesm.nanatsunotaizaiappchallenge.PecadosFragment"
+        android:label="fragment_pecados"
+        tools:layout="@layout/fragment_pecados" >
+        <action
+            android:id="@+id/action_pecadosFragment_to_pecadoFragment"
+            app:destination="@id/pecadoFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/pecadoFragment"
+        android:name="edu.itesm.nanatsunotaizaiappchallenge.PecadoFragment"
+        android:label="fragment_pecado"
+        tools:layout="@layout/fragment_pecado" >
+        <argument
+            android:name="pecados"
+            app:argType="edu.itesm.nanatsunotaizaiappchallenge.Pecados" />
+    </fragment>
+</navigation>
