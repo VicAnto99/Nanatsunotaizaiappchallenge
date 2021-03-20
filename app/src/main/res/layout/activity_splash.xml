@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/logo"
+    android:background="@drawable/logo2"
     android:visibility="visible"
     tools:context=".SplashActivity">
 
@@ -12,10 +12,11 @@
         android:id="@+id/cuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/manga_speak_bold"
         android:marqueeRepeatLimit="marquee_forever"
         android:text="0"
         android:textAllCaps="false"
-        android:textColor="#FFF200"
+        android:textColor="@color/white"
         android:textSize="36sp"
         android:textStyle="bold"
         android:typeface="normal"

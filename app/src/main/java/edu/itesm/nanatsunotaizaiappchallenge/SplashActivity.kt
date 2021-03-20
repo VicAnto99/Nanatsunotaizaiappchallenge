@@ -18,7 +18,7 @@ class SplashActivity : AppCompatActivity() {
                 cuenta.text = (millisUntilFinished/cien).toString()
             }
             override fun onFinish() {
-                cuenta.text = "Yōkoso ようこそ :)"
+                cuenta.text = "Yokoso ようこそ :)"
             }
         }
         timer.start()
